@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Twitter Clone</title>
+    <link
+      rel="stylesheet"
+      href="{% static 'twitter/css/bootstrap.min.css' %}"
+    />
+    <link rel="stylesheet" href="{% static 'twitter/css/custom.css' %}" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.js"
+      defer
+    ></script>
+    <style>
+      [x-cloak] {
+        display: none;
+      }
+    </style>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+  <body class="antialiased sans-serif bg-gray-200">
+ 
+      {% block content %} {% endblock content %}
+  
+    <script src="{% static 'twitter/js/custom.js' %}"></script>
+    <script src="{% static 'twitter/js/jquery.js' %}"></script>
+    <script src="{% static 'twitter/js/popper.js' %}"></script>
+    <script src="{% static 'twitter/js/bootstrap.js' %}"></script>
+  </body>
+</html>
